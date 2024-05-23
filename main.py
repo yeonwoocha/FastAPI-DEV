@@ -3,10 +3,21 @@ from starlette.middleware.cors import CORSMiddleware
 
 from domain.answer import answer_router
 from domain.question import question_router
+from domain.user import user_router
 
 # uvicorn main:app --reload --host 0.0.0.0
 # uvicorn main:app --reload
+# npm run dev
 
+
+'''
+환경 설정
+pip install "pydantic[email]"
+pip install "passlib[bcrypt]"
+
+alembic revision --autogenerate
+alembic upgrade head
+'''
 app = FastAPI()
 
 origins = [
@@ -23,3 +34,4 @@ app.add_middleware(
 
 app.include_router(question_router.router)
 app.include_router(answer_router.router)
+app.include_router(user_router.router)

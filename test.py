@@ -15,7 +15,7 @@ largest_squared_number = find_squared_largest(array)
 print(f"The largest squared number in the list is {largest_squared_number}")
 '''
 
-
+'''
 class MyIterator():
     def __init__(self, data):
         self.data = data
@@ -35,7 +35,8 @@ if __name__ == "__main__":
     i = MyIterator([1,2,3])
     for item in i:
         print(item)
-
+'''
+        
 '''
 def is_prime(n):
     if n<2:
@@ -50,3 +51,20 @@ if is_prime(n):
 else:
     print(f'given number {n} is not prime')
 '''
+
+def simple_generator(n):
+    i = 1
+    while i <= n:
+        yield i
+        i += 1
+
+# 제너레이터 객체 생성
+gen = simple_generator(5)
+
+# 제너레이터의 값 순회
+for value in gen:
+    print(value)
+
+
+
+
