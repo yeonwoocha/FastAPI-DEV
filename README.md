@@ -1,6 +1,6 @@
-# Fast-API-DEV
+# FastAPI-DEV
 ### 프로젝트 소개 
-Fast-API-DEV 프로젝트는 Python의 FastAPI 프레임워크를 활용하여 API 서버를 개발하는 예제 프로젝트입니다.
+FastAPI-DEV 프로젝트는 Python의 FastAPI 프레임워크를 활용하여 API 서버를 개발하는 예제 프로젝트입니다.
 기존에 크롤링으로 수집된 데이터 및 Reddit API를 통해 추가 확보한 데이터를 FastAPI 엔드포인트와 연동하여,
 
 - 데이터 요청(조회)
